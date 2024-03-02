@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #BED1CF;
+    color: black;
+    background-image: url(./images/bgimg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.header{
+    height: 600px;
+    width: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    float: right;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    
+}
+.container{
+    padding: 10px 10%;
+     
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 80px;
+   
+   
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFF7F1;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+
+}
+.header-text{
+    color: white;
+    font-size: 30px;
+    margin-top: 200px;
+    margin-right: 10px;
+    
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #953ffd;
+}
+/*---about--*/
+
+#about{
+    padding: 80px 0;
+    color: white;
+    margin-top: 280px;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+
+}
+
+.simg{
+    height: 200px;
+    width: 200px;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+          
+
+}
+.about-col-1{  
+    text-align: center;
+
+}
+
+
+.about-col-1 img{
+    width: 100%;
+    
+}
+
+.text{
+    font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    background-color: rgb(236, 212, 177);
+}
+.text-a{
+    font-size: 26px;
+    background-color: #92f351;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    
+    
+}
+
+    
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #debca1;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: 20px;
+}
+
+#projects{
+    color: white;
+    padding: 50px 0;
+
+}
+.work-list img{
+    height: 400px;
+    width: 400px;
+    padding: 10px 10px;
+    
+}
+.work-list{
+    display: flex;
+
+}
+.work{
+    flex: 33.33%;
+    padding: 5px;
+}
+.layer{
+    color: whitesmoke;
+
+}
+.b-button{
+    background-color: white;
+        color: black;
+        font-weight: bold;
+        border-radius: 12px;
+        cursor:pointer;
+        height: 40px;
+        width: 320px;
+        margin-right: 2px;
+        border: none;
+        transition: background-color 0.15s,border-width 0.15s;
+        margin-left: 45px;
+
+}
+.b-button:hover{
+    background-color: rgb(240, 240, 170);
+    border-width: 3px;
+
+}
+.work p{
+    margin-left: 45px;
+}
+.blogs{
+    color: white;
+    padding: 50px 0;
+    margin-left: 100px;
+}
+.section-heading{
+    text-align: center;
+    color: white;
+}
+.col-lg-2{
+    color: white;
+}
+.row{
+    display: flex;
+
+}
+.col-lg-2{
+    flex: 33.33%;
+    padding: 5px;
+
+}
+.contact-left{
+    color: white;
+}
+.social-icons{
+    color: white;
+    
+}
+.ln-button{
+    background-color: rgb(131, 112, 254);
+    color:white;
+    height:36px;
+    width:130px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;   
+
+}
+.ln-button:hover{
+    opacity: 0.8;
+}
+
+.contact-left{
+    flex: 50%;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100%;
+        background-color: #BED1CF;
+        color: black;
+        background-image: url(./images/bgimg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    /* Header styles */
+    .header {
+        height: 400px; /* Adjusted height for smaller screens */
+        width: 100%; /* Full width for mobile */
+        margin: 40px 0; /* Margin adjusted for smaller screens */
+    }
+    
+    /* Container styles */
+    .container {
+        padding: 10px; /* Padding adjusted for smaller screens */
+    }
+    
+    /* Navigation styles */
+    nav ul li {
+        display: block; /* Display as block for better mobile view */
+        margin: 10px 0; /* Margin adjusted for smaller screens */
+    }
+    
+    /* About section styles */
+    #about {
+        padding: 40px 0; /* Padding adjusted for smaller screens */
+        margin-top: 180px; /* Margin adjusted for smaller screens */
+    }
+    
+    /* Work section styles */
+    #projects {
+        padding: 30px 0; /* Padding adjusted for smaller screens */
+    }
+    
+    .work-list img {
+        height: auto; /* Adjusted height to maintain aspect ratio */
+        width: 100%; /* Full width for mobile */
+        padding: 10px 0; /* Padding adjusted for smaller screens */
+    }
+    
+    /* Contact section styles */
+    .blogs {
+        padding: 30px 0; /* Padding adjusted for smaller screens */
+        margin-left: 0; /* Margin reset for smaller screens */
+    }
+    
+    .col-lg-2 {
+        flex: 100%; /* Full width for mobile */
+        padding: 5px; /* Padding adjusted for smaller screens */
+    }
+    
+    .contact-left {
+        text-align: center; /* Text alignment adjusted for mobile */
+    }
+}
